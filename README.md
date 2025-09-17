@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Notes App
 
-## Getting Started
+A clean and responsive **full-stack note-taking application** built with **Next.js (App Router)** and **MongoDB Atlas**.  
+Users can create, view, edit, delete, search, and filter notes with a modern UI powered by **TailwindCSS**.  
 
-First, run the development server:
+---
 
+## ✨ Features
+
+- 🖊️ **Create Notes**: Add notes with a title and content.  
+- 📋 **View Notes**: See all saved notes in a responsive grid.  
+- ✏️ **Edit Notes**: Update existing notes.  
+- 🗑️ **Delete Notes**: Remove notes with a single click.  
+- 🔍 **Search & Filter**: Search notes by title or content; filter by date (latest/oldest).  
+---
+
+## 🧱 Technology Stack
+
+### 🔹 Frontend & Backend 
+- **Next.js 13+ (App Router)** – React framework for frontend & backend API routes  
+- **Axios** – for API requests  
+- **TailwindCSS** – for modern, responsive styling  
+ 
+### 🔹 Database
+- **MongoDB Atlas** – cloud database  
+ 
+---
+
+## ⚙️ Prerequisites
+
+- Node.js and npm installed  
+- MongoDB Atlas account (or local MongoDB)  
+- Git  
+
+---
+
+## 📥 Installation
+
+### 1. Clone the Repository
 ```bash
+git clone https://github.com/Gaya3ps/notes-app.git
+cd notes-app
+```
+### 2. Install Dependencies
+
+```
+npm install
+
+```
+### 3. Setup Environment Variables
+-Create a .env.local file in the root:
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/notesapp?retryWrites=true&w=majority
+
+
+### 4. Run Locally
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+📤Deployment (Vercel)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Push your repo to GitHub.
 
-## Learn More
+Go to Vercel and import the project.
 
-To learn more about Next.js, take a look at the following resources:
+In Project Settings → Environment Variables, add your MONGODB_URI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy 🚀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your app will be live at https://your-project-name.vercel.app
